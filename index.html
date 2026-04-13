@@ -1,1 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FEIRA BOUNTY</title>
+    <link rel="stylesheet" href="Style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
 
+    <nav id="sidebar">
+        <div id="sidebar_content">
+            <div id="user">
+                <img src="logo.jpeg" alt="logo FB" id="logo-menu">
+                <span class="item-description">MENU</span>
+            </div>
+            
+            <ul id="side_itens">
+                <li class="side-item">
+                    <a href="#">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="item-description">PEDIDOS</span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a href="#">
+                        <i class="fa-solid fa-house"></i>
+                        <span class="item-description">INICIO</span>
+                    </a>
+                </li>      
+                <li class="side-item">
+                    <a href="#">
+                        <i class="fa-solid fa-phone"></i>
+                        <span class="item-description">CONTATO</span>
+                    </a>
+                </li>
+            </ul>
+
+            <button id="open_btn">
+                <i id="open_btn_icon" class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+    </nav>
+    
+    <div id="interface">
+        <header id="cabecalho">
+            <h2>FEIRA BOUNTY</h2>
+            <div id="header_icons">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-user"></i>
+            </div>
+        </header>
+
+        <main>
+            <h1>OFERTAS</h1>
+        </main> 
+      <div class="rodape">
+         <footer>
+
+        </footer>
+      </div>  
+        
+
+        
+    </div>
+
+    <script>
+        document.getElementById('open_btn').addEventListener('click', function () {
+            document.getElementById('sidebar').classList.toggle('open-sidebar');
+        });
+    </script>
+
+</body>
+</html>
